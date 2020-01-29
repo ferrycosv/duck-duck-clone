@@ -2,21 +2,15 @@
 
 ## WireFrame
 
-> link to your wireframe.cc wireframe. (you can ignore the evaluation buttons in your wireframe)
+> [link](https://wireframe.cc/c2RzFq)
 
 ## Steps Plan
 
-> add one row to this table for each user story you define
 
 | _Step Name_ | User Story | Changes in HTML | Changes in CSS |
 | --- | --- | --- | --- |
-| __Live Boilerplate__ | As an enthusiastic HYF student I can navigate to an empty website so that I know the project is set up correctly | An empty template project with `doctype`, language, charset, `head` & `body`, and evaluation script | an empty main `style.css` and an existing evaluation style |
-|  | |  |  |
-| ... | ... | ... | ... |
-| (descriptive name) | (user story) | (what did you add to the HTML?) | (what did you add to the CSS?) |
-
-
----
----
-
-### <a href="https://hackyourfuture.be" target="_blank"><img src="https://user-images.githubusercontent.com/18554853/63941625-4c7c3d00-ca6c-11e9-9a76-8d5e3632fe70.jpg" width="100" height="100" alt="Hack Your Future: Belgium"></a>
+| __Step 1: Layout wireframe__ | As a HYF student, I want to draft the duckduckgo webpage and design the layout of my clone using wireframe.cc an easy to use online tool for that purpose | N/A | N/A |
+| __Step 2: Header and Main Search__ | As a HYF student, I want to create the header with navbar and main search areas using the guide of the wireframe design, so that it's responsive for any screen size and follow the accessibility requirements ARIA | N/A | N/A |
+| __Step 3: Showcase section__ | As a HYF student, I want to build the showcase section using the guide of the wireframe design, so that it's responsive for any screen size and follow the accessibility requirements ARIA| N/A | N/A |
+| __Step 4: Features section__ | As a HYF student, I want to implement the features section using the guide of the wireframe design, so that it's responsive for any screen size and follow the accessibility requirements ARIA | N/A | N/A |
+| __Step 5: Info section__ | As a HYF student, I want to make the 4 different information sections using the guide of the wireframe design, so that it's responsive for any screen size and follow the accessibility requirements ARIA | N/A | N/A |
