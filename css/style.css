@@ -1,0 +1,62 @@
+/* Main CSS style code file */
+body {
+  font-family: "Open-sans", sans-serif;
+  font-size: 17px;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+.container {
+  margin: auto;
+}
+img {
+  width: 100%;
+}
+
+/* Navbar style */
+#navbar {
+  text-transform: uppercase;
+  font-size: 25px;
+}
+#navbar li {
+  display: inline;
+  padding-right: 20px;
+  list-style: none;
+}
+#navbar a {
+  text-decoration: none;
+  color: #aaaaaa;
+}
+#navbar li.current a,
+#navbar a:hover {
+  color: #6d6d6d;
+}
+
+/* Main search */
+.search-bar {
+  padding-top: 10px;
+}
+.search-input {
+    padding-left: 10px;
+    height:30px;
+    width: 75%;
+    font-size: 20px;
+  }
+.search-button {
+    text-align: center;
+    width: 45px;
+    font-size: 28px;
+    height: 40px;
+    color: #aaaaaa;
+    background-color: #f7f7f7;
+    border: none;
+}
+.search-logo {
+    width: 200px;
+}
+.search-button:hover {
+    background-color: #5b9e4d;
+    color: #f7f7f7;;
+}

@@ -4,18 +4,86 @@
     <title>Duck Duck Clone</title>
     <meta charset="utf-8" />
 
-    <!-- Leave these here!  They are for the evaluation  -->
+    <!-- Leave these here!  They are for the evaluation -->
     <script src="./evaluation/init.js"></script>
     <!-- flexboxgrid.css linked to the page -->
     <link rel="stylesheet" href="css/flexboxgrid.css" />
+    <!-- font-awesome.css contains very neat icons to use -->
+    <link rel="stylesheet" href="css/font-awesome.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="box">12</div>
+    <!-- Header part -->
+    <header id="main-header">
+      <div class="container">
+        <div class="row center-xs end-sm end-md end-lg">
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <nav id="navbar">
+              <ul>
+                <li>
+                  <a
+                    href="https:twitter.com/duckduckgo"
+                    class="fa fa-twitter"
+                    title="twitter-link"
+                    tabindex="3"
+                    aria-label="Twitter link"
+                  >
+                    <span
+                      ><a
+                        href="#"
+                        class="fa fa-angle-down"
+                        title="button"
+                        tabindex="4"
+                        aria-label="More links"
+                      ></a></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="fa fa-bars" title="menu" tabindex="5" aria-label="Menu button"></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
-    </div>
+    </header>
+    <main>
+      <section id="main-search">
+        <div class="container">
+          <div class="row center-xs center-sm center-md center-lg">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="row center-xs center-sm center-md center-lg">
+                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                  <img class="search-logo"
+                    src="img/logo_homepage_mobile.normal.v108.unoptimized.svg"
+                    alt="DuckDuckGo logo"
+                  />
+                </div>
+              </div>
+
+              <div class="row search-bar center-xs center-sm center-md center-lg">
+                <div class="col-xs-11 col-sm-10 col-md-10 col-lg-10">
+                  <form action="" method="POST">
+                    <input
+                    class="search-input"  
+                    type="text"
+                      name="query"
+                      id="query"
+                      aria-label="Search"
+                      placeholder="Input text to search..."
+                      tabindex="1"
+                    />
+                    <button class="search-button" type="submit" aria-label="Search" tabindex="2">
+                      <i class="fa fa-search " title="Click to search"></i>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
