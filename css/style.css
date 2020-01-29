@@ -1,6 +1,58 @@
 /* Main CSS style code file */
+@font-face {
+  font-family: "DDG_ProximaNova";
+  src: url("../fonts/ProximaNova-Sbold-webfont.eot");
+  src: url("../fonts/ProximaNova-Sbold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/ProximaNova-Sbold-webfont.woff") format("woff"),
+    url("../fonts/ProximaNova-Sbold-webfont.ttf") format("truetype"),
+    url("../fonts/ProximaNova-Sbold-webfont.svg#proxima_nova_ltsemibold")
+      format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DDG_ProximaNova";
+  src: url("../fonts/ProximaNova-Reg-webfont.eot");
+  src: url("../fonts/ProximaNova-Reg-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/ProximaNova-Reg-webfont.woff") format("woff"),
+    url("../fonts/ProximaNova-Reg-webfont.ttf") format("truetype"),
+    url("../fonts/ProximaNova-Reg-webfont.svg#proxima_nova_rgregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DDG_ProximaNova";
+  src: url("../fonts/ProximaNova-RegIt-webfont.eot");
+  src: url("../fonts/ProximaNova-RegIt-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/ProximaNova-RegIt-webfont.woff") format("woff"),
+    url("../fonts/ProximaNova-RegIt-webfont.ttf") format("truetype"),
+    url("../fonts/ProximaNova-RegIt-webfont.svg#proxima_novaregular_italic")
+      format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "DDG_ProximaNova";
+  src: url("../fonts/ProximaNova-Light-webfont.eot");
+  src: url("../fonts/ProximaNova-Light-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/ProximaNova-Light-webfont.woff") format("woff"),
+    url("../fonts/ProximaNova-Light-webfont.ttf") format("truetype"),
+    url("../fonts/ProximaNova-Light-webfont.svg#proxima_nova_ltlight") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
 body {
-  font-family: "Open-sans", sans-serif;
+  font-family: "DDG_ProximaNova", "DDG_ProximaNova_UI_0", "DDG_ProximaNova_UI_1",
+    "DDG_ProximaNova_UI_2", "DDG_ProximaNova_UI_3", "DDG_ProximaNova_UI_4",
+    "DDG_ProximaNova_UI_5", "DDG_ProximaNova_UI_6", "Proxima Nova",
+    "Helvetica Neue", "Helvetica", "Segoe UI", "Nimbus Sans L",
+    "Liberation Sans", "Open Sans", FreeSans, Arial, sans-serif;
+  color: #222;
   font-size: 17px;
   line-height: 1.5em;
   margin: 0;
@@ -13,6 +65,9 @@ body {
 }
 img {
   width: 100%;
+}
+.gold {
+  color: gold;
 }
 
 /* Navbar style */
@@ -39,24 +94,85 @@ img {
   padding-top: 10px;
 }
 .search-input {
-    padding-left: 10px;
-    height:30px;
-    width: 75%;
-    font-size: 20px;
-  }
+  padding-left: 10px;
+  height: 30px;
+  width: 75%;
+  font-size: 20px;
+}
 .search-button {
-    text-align: center;
-    width: 45px;
-    font-size: 28px;
-    height: 40px;
-    color: #aaaaaa;
-    background-color: #f7f7f7;
-    border: none;
+  text-align: center;
+  width: 45px;
+  font-size: 28px;
+  height: 36px;
+  color: #aaaaaa;
+  background-color: #f7f7f7;
+  border: none;
+  position: absolute;
 }
 .search-logo {
-    width: 200px;
+  width: 200px;
 }
 .search-button:hover {
-    background-color: #5b9e4d;
-    color: #f7f7f7;;
+  background-color: #5b9e4d;
+  color: #f7f7f7;
+}
+
+/* Showcase */
+
+#showcase h2 {
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/*#showcase h6 {
+  margin-bottom: 80px;
+}*/
+
+.add-button {
+  text-align: center;
+  font-size: 14px;
+  height: 43px;
+  margin: 0 auto;
+  padding-left: 1.8em;
+  padding-right: 1.8em;
+  color: #fff;
+  background-color: #678fff;
+  border: none;
+  border-radius: 10px;
+}
+
+.search-button:hover {
+  background-color: #5b9e4d;
+  color: #f7f7f7;
+}
+
+.showcase-img {
+  height: 400px;
+  padding-top: 90px;
+  background-image: url("../img/background.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+.showcase-content {
+  position: absolute;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Media queries */
+@media (max-width: 800px) {
+  .showcase-content {
+    position: relative;
+  }
+  .showcase-img {
+    width: 80%;
+    height: 200px;
+    padding-top: 0px;
+    background-image: url("../img/background-small.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
 }
