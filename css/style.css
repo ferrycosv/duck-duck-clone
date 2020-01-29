@@ -18,7 +18,8 @@
       format("embedded-opentype"),
     url("../fonts/ProximaNova-Reg-webfont.woff") format("woff"),
     url("../fonts/ProximaNova-Reg-webfont.ttf") format("truetype"),
-    url("../fonts/ProximaNova-Reg-webfont.svg#proxima_nova_rgregular") format("svg");
+    url("../fonts/ProximaNova-Reg-webfont.svg#proxima_nova_rgregular")
+      format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -41,7 +42,8 @@
       format("embedded-opentype"),
     url("../fonts/ProximaNova-Light-webfont.woff") format("woff"),
     url("../fonts/ProximaNova-Light-webfont.ttf") format("truetype"),
-    url("../fonts/ProximaNova-Light-webfont.svg#proxima_nova_ltlight") format("svg");
+    url("../fonts/ProximaNova-Light-webfont.svg#proxima_nova_ltlight")
+      format("svg");
   font-weight: 300;
   font-style: normal;
 }
@@ -125,10 +127,6 @@ img {
   font-weight: bold;
 }
 
-/*#showcase h6 {
-  margin-bottom: 80px;
-}*/
-
 .add-button {
   text-align: center;
   font-size: 14px;
@@ -159,6 +157,28 @@ img {
   position: absolute;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+/* Features */
+#features {
+  background: linear-gradient(180deg, #f7f7f7 50%, #58b792 50%);
+}
+#features h1 {
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.features-section {
+  margin-top: 10px;
+  padding: 20px 25px;
+  background-color: #fff;
+  border-radius: 18px;
+  box-shadow: 0px 10px 16px -8px rgba(0, 0, 0, 0.2);
+}
+
+.features-section img {
+  width: 50%;
 }
 
 /* Media queries */
