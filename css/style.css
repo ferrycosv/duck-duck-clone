@@ -1,4 +1,5 @@
 /* Main CSS style code file */
+/* Custom font configuration */
 @font-face {
   font-family: "DDG_ProximaNova";
   src: url("../fonts/ProximaNova-Sbold-webfont.eot");
@@ -47,7 +48,7 @@
   font-weight: 300;
   font-style: normal;
 }
-
+/* Common styling */
 body {
   font-family: "DDG_ProximaNova", "DDG_ProximaNova_UI_0", "DDG_ProximaNova_UI_1",
     "DDG_ProximaNova_UI_2", "DDG_ProximaNova_UI_3", "DDG_ProximaNova_UI_4",
@@ -61,7 +62,6 @@ body {
   padding: 0;
   background-color: #f7f7f7;
 }
-
 .container {
   margin: auto;
 }
@@ -71,7 +71,6 @@ img {
 .gold {
   color: gold;
 }
-
 /* Navbar style */
 #navbar {
   text-transform: uppercase;
@@ -90,7 +89,6 @@ img {
 #navbar a:hover {
   color: #6d6d6d;
 }
-
 /* Main search */
 .search-bar {
   padding-top: 10px;
@@ -118,15 +116,12 @@ img {
   background-color: #5b9e4d;
   color: #f7f7f7;
 }
-
 /* Showcase */
-
 #showcase h2 {
   margin-top: 30px;
   font-size: 30px;
   font-weight: bold;
 }
-
 .add-button {
   text-align: center;
   font-size: 14px;
@@ -139,12 +134,10 @@ img {
   border: none;
   border-radius: 10px;
 }
-
 .search-button:hover {
   background-color: #5b9e4d;
   color: #f7f7f7;
 }
-
 .showcase-img {
   height: 400px;
   padding-top: 90px;
@@ -158,7 +151,6 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
-
 /* Features */
 #features {
   background: linear-gradient(180deg, #f7f7f7 50%, #58b792 50%);
@@ -168,7 +160,6 @@ img {
   font-weight: bold;
   padding-top: 20px;
 }
-
 .features-section {
   margin-top: 10px;
   padding: 20px 25px;
@@ -176,11 +167,55 @@ img {
   border-radius: 18px;
   box-shadow: 0px 10px 16px -8px rgba(0, 0, 0, 0.2);
 }
-
 .features-section img {
   width: 50%;
 }
-
+/* Info section */
+#info-1 {
+  background-color: #58b792;
+}
+.info {
+  color: #fff;
+  padding-top: 30px;
+}
+.info h1 {
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 120%;
+}
+.info p {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 100%;
+}
+.info img {
+  width: 90%;
+  padding-top: 20px;
+}
+#info-2 {
+  background-color: #f5a339;
+}
+#info-3 {
+  background-color: #5f63bd;
+}
+#info-4 {
+  background-color: #87cef5;
+}
+#info-4 .info {
+  color: #365374;
+}
+#info-4 span {
+  font-size: 15px;
+  font-weight: bold;
+}
+#info-4 a:hover,
+#info-4 a:visited,
+#info-4 a:link,
+#info-4 a:active,
+#info-4 a:focus {
+  color: #365374;
+  text-decoration: none;
+}
 /* Media queries */
 @media (max-width: 800px) {
   .showcase-content {
